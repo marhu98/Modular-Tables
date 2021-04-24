@@ -23,7 +23,7 @@ class Table:
                                       stroke_width=0.1,
                                       fill="none"))
     
-    def __init__(self,number,mod, size=100, put_numbers = True, color = "blue"):
+    def __init__(self,number,mod, size=100, put_numbers = True, color = "blue",name="picture"):
         
         self.size=size
         
@@ -36,6 +36,8 @@ class Table:
         self.mod = mod
         self.number = number
         self.color = color
+        self.dir = dir
+        self.name = name
         
         self.draw.append(
             draw.Circle(0,0,self.radius,fill="white",
@@ -65,8 +67,67 @@ class Table:
                                           text_anchor='middle',valign="middle"))
         
         self.printlines()
+    
+    def save(self, dir=""):
+        if dir == "":
+            dir=self.dir
+        dir+="/svg"
+        if not os.path.exists(dir):
+            os.makedirs(dir)
             
-
+        self.draw.saveSvg(f"{dir}/{self.name}.svg")
+        
+            
+            
+        
+class Animate_mod:
+    
+    def __init__(self,number,mods, size=100, put_numbers = True,name="frame",color="blue"):
+        self.size=size
+        
+        self.draw = draw.Drawing(size, size, origin="center")
+        
+        self.mods = mods
+        self.number = number
+        self.put_numbers=put_numbers
+        self.color = color
+        
+        self.name = name
+        
+        self.frames = []
+        
+    def get_frames(self):
+        current = self.mods[0]
+        with draw.animate_jupyter(self.draw_frame, delay=0.05) as anim:
+            while current<self.mods[1]:
+                current = current+1
+                self.frames.append(self.draw_frame(current))
+        
+    def save(self,dir="frames"):
+        dir+="/svg"
+        if not os.path.exists(dir):
+            os.makedirs(dir)
+        self.get_frames()
+        for i in tqdm(range(len(self.frames))):
+            self.frames[i].saveSvg(f"{dir}/frame{i}.svg")
+        
+    def draw_frame(self,current):
+        d = Table(self.number,current,size=self.size, put_numbers = self.put_numbers, color = self.color).draw
+        d.setRenderSize(h=self.size)
+        return d
+        
+    def animate(self):
+        current = self.mods[0]
+        with draw.animate_jupyter(self.draw_frame, delay=0.05) as anim:
+            while current<=self.mods[1]:
+                #print(current)
+                current = current+1
+                anim.draw_frame(current)
+                
+            #This is just to make the last frame nicer
+            anim.draw_frame(int(current+1))
+        
+        
 class Animate_number:
     
     def __init__(self,numbers,mod, size=100, put_numbers = True,step=0.1,name="frame",color="blue"):

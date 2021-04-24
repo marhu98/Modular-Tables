@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="500.0" height="500" viewBox="-250.0 -250.0 500 500">
+<defs>
+</defs>
+<circle cx="0" cy="0" r="245.0" fill="white" stroke-width="2" stroke="black" />
+<path d="M0.0,-245.0 L0.0,-245.0" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M191.54871320466728,-152.75500145538973 L238.85733848454677,54.517628819297016" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M238.85733848454677,54.517628819297016 L-106.30151608380172,220.7373726360927" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M106.30151608380177,220.73737263609266 L-191.54871320466734,-152.75500145538967" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M-106.30151608380172,220.7373726360927 L191.54871320466728,-152.75500145538973" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M-238.85733848454677,54.51762881929707 L106.30151608380177,220.73737263609266" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M-191.54871320466734,-152.75500145538967 L-238.85733848454677,54.51762881929707" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+</svg>

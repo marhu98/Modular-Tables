@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="500.0" height="500" viewBox="-250.0 -250.0 500 500">
+<defs>
+</defs>
+<circle cx="0" cy="0" r="245.0" fill="white" stroke-width="2" stroke="black" />
+<path d="M0.0,-245.0 L0.0,-245.0" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M212.17622392718746,-122.50000000000003 L212.17622392718752,122.49999999999994" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M212.17622392718752,122.49999999999994 L-212.1762239271874,122.50000000000011" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M3.0003846579110155e-14,245.0 L0.0,-245.0" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M-212.1762239271874,122.50000000000011 L212.17622392718752,122.49999999999994" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M-212.17622392718746,-122.5 L-212.1762239271874,122.50000000000011" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+</svg>

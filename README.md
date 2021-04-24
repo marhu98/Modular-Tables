@@ -27,3 +27,7 @@ Here is how you can generate an animation:
 * Generate all the svg
 * Use cairo to convert them to png. Here there is a Dockerfile that will do it for you if don't want to set up Cairo
 * Use imageio to generate the gif
+
+
+![Example output](gifs/2.gif)
+![Example output](gifs/3.gif)

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="500.0" height="500" viewBox="-250.0 -250.0 500 500">
+<defs>
+</defs>
+<circle cx="0" cy="0" r="245.0" fill="white" stroke-width="2" stroke="black" />
+<path d="M0.0,-245.0 L0.0,-245.0" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M173.24116139070412,-173.24116139070415 L245.0,-1.5001923289555078e-14" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M245.0,-1.5001923289555078e-14 L3.0003846579110155e-14,245.0" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M173.24116139070415,173.24116139070412 L-245.0,4.500576986866523e-14" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M3.0003846579110155e-14,245.0 L0.0,-245.0" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M-173.24116139070412,173.24116139070418 L245.0,-1.5001923289555078e-14" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M-245.0,4.500576986866523e-14 L3.0003846579110155e-14,245.0" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+<path d="M-173.24116139070418,-173.24116139070412 L-245.0,4.500576986866523e-14" stroke="#0d6d4d" stroke-width="0.1" fill="none" />
+</svg>

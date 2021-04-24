@@ -4,7 +4,7 @@ run:
 	docker run --rm -v $$(pwd)/frames:/frames --name test test
 	python gifphy.py
 runExample:
-	python fig1.py
+	python figs.py
 	docker run --rm -v $$(pwd)/frames:/frames --name test test
 	python gifphy.py
 rm:

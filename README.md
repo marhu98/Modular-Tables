@@ -6,6 +6,12 @@ on Mickaël Launay's video: [https://www.youtube.com/watch?v=-X49VQgi86E](https:
 In his video, he explains how we the classical multiplication tables
 we all know and love can be drawn in a very beautiful way, such as the one below:
 
+## Graphics are generated in svg format, to make gifs follow the steps below. In jupyter you can just call the animate method:
+```
+a = Animate_mod(4,[3,200],put_numbers=False,size=500, color="#0d6d4d")
+a.animate()
+```
+
 ![Example output](gifs/1.gif)
 
 
@@ -17,7 +23,7 @@ cd Modular-Tables
 make runExample
 ```
 
-Then look in the folder gifs for 1.gif
+Then look in the folder gifs
 
 
 Here is how you can generate a new image:

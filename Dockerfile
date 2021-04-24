@@ -10,7 +10,11 @@ RUN apk add --no-cache \
 
 
 RUN pip install "CairoSVG==2.1.3"
+RUN pip install tqdm
+
+COPY bin/* bin/
 
 #ADD frames/ /frames
 
 #CMD ["ls","frames"]
+CMD ["python","/bin/convert.py"]

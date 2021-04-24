@@ -1,0 +1,3 @@
+#!/bin/bash
+
+inkscape -D -z --file="$1.svg" --export-png="$1.png" 

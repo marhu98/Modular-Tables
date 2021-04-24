@@ -1,0 +1,20 @@
+#!/bin/bash
+
+files="$( ls "$PWD" | sed 's/\..*//' )"
+
+$i=1
+$j=1
+
+
+for filename in $files
+do
+    let "j++"
+done
+
+for filename in $files
+    do
+        let "i++"
+        echo "$i/$j done"
+        tosvg $filename png > /dev/null 2>&1
+    done
+

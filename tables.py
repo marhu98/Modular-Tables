@@ -1,3 +1,4 @@
+import os
 import drawSvg as draw
 import numpy as np
 from tqdm import tqdm
@@ -93,10 +94,13 @@ class Animate_number:
             #This is just to make the last frame nicer
             self.frames.append(self.draw_frame(int(current+self.step)))
         
-    def save(self):
+    def save(self,dir="frames"):
+        dir+="/svg"
+        if not os.path.exists(dir):
+            os.makedirs(dir)
         self.get_frames()
         for i in tqdm(range(len(self.frames))):
-            self.frames[i].saveSvg(f"frames/frame{i}.svg")
+            self.frames[i].saveSvg(f"{dir}/frame{i}.svg")
         
     def draw_frame(self,current):
         d = Table(current,self.mod,size=self.size, put_numbers = self.put_numbers, color = self.color).draw
@@ -114,4 +118,4 @@ class Animate_number:
                 anim.draw_frame(current)
                 
             #This is just to make the last frame nicer
-                anim.draw_frame(int(current+self.step))
+            anim.draw_frame(int(current+self.step))

@@ -86,13 +86,10 @@ class Animate_number:
     def get_frames(self):
         current = self.numbers[0]
         with draw.animate_jupyter(self.draw_frame, delay=0.05) as anim:
-            while current<=self.numbers[1]:
+            while current<self.numbers[1]:
                 #print(current)
                 current = current+self.step
                 self.frames.append(self.draw_frame(current))
-                
-            #This is just to make the last frame nicer
-            self.frames.append(self.draw_frame(int(current+self.step)))
         
     def save(self,dir="frames"):
         dir+="/svg"

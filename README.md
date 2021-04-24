@@ -12,7 +12,7 @@ Here is how you can generate a new image:
 
 
 Here is how you can generate an animation:
-    [] Generate all the svg
-    [] Use cairo to convert them to png. Here there is a Dockerfile that will do it for you if don't want to set up Cairo
-    [] Use imageio to generate the gif
+    - [] Generate all the svg
+    - [] Use cairo to convert them to png. Here there is a Dockerfile that will do it for you if don't want to set up Cairo
+    - [] Use imageio to generate the gif
 

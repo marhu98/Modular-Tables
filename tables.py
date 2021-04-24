@@ -29,7 +29,10 @@ class Table:
         
         self.draw = draw.Drawing(size, size, origin="center")
         
-        self.radius = 0.35*size
+        if put_numbers:
+            self.radius = 0.35*size
+        else:
+            self.radius= 0.49*size
         self.mod = mod
         self.number = number
         self.color = color

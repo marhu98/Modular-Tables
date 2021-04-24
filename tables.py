@@ -1,5 +1,6 @@
 import drawSvg as draw
 import numpy as np
+from tqdm import tqdm
 
 class Table:
     
@@ -94,7 +95,7 @@ class Animate_number:
         
     def save(self):
         self.get_frames()
-        for i in range(len(self.frames)):
+        for i in tqdm(range(len(self.frames))):
             self.frames[i].saveSvg(f"frames/frame{i}.svg")
         
     def draw_frame(self,current):

@@ -1,6 +1,9 @@
 build:
 	docker build -t test .
 run:
+	docker run --rm -v $$(pwd)/frames:/frames --name test test
+	python gifphy.py
+runExample:
 	python fig1.py
 	docker run --rm -v $$(pwd)/frames:/frames --name test test
 	python gifphy.py

@@ -32,7 +32,7 @@ class Table:
         if put_numbers:
             self.radius = 0.35*size
         else:
-            self.radius= 0.49*size
+            self.radius= 0.5*size-5
         self.mod = mod
         self.number = number
         self.color = color
@@ -74,7 +74,6 @@ class Animate_number:
         
         self.draw = draw.Drawing(size, size, origin="center")
         
-        self.radius = 0.35*size
         self.mod = mod
         self.numbers = numbers
         self.put_numbers=put_numbers

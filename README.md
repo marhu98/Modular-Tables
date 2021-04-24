@@ -9,12 +9,16 @@ we all know and love can be drawn in a very beautiful way, such as the one below
 ![Example output](gifs/1.gif)
 
 
+### Generating the example
 To generate this particular example, just pull the repo and run it:
 ```
 git pull https://github.com/marhu98/Modular-Tables.git
 cd Modular-Tables
 make runExample
 ```
+
+Then look in the folder gifs for 1.gif
+
 
 Here is how you can generate a new image:
 

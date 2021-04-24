@@ -12,7 +12,7 @@ we all know and love can be drawn in a very beautiful way, such as the one below
 ### Example:
 
 Let' say we wanted to generate the table of 23 mod 57:
-In Jupyter:
+If we are in Jupyter's notebook, then we can display it as follows:
 ```
 from tables import Table
 a = Table(23,57,put_numbers=False,size=1000,step=0.01, color="#0d6d4d",)

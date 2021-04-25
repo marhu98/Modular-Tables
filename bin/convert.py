@@ -7,11 +7,13 @@ def createIfNot(dir):
     if not os.path.exists(dir):
         os.makedirs(dir)
 
-folders = glob("/frames/*")
+folders = glob("/frames/*/")
 
 for folder in folders:
-    createIfNot(folder+"/png")
-    for file in tqdm(glob(f"{folder}/svg/*.svg")):
+    if "." in folder:
+        continue
+    createIfNot(folder+"png")
+    for file in tqdm(glob(f"{folder}svg/*.svg")):
         dest = file.split("/")
         name = dest.pop()
         dest.pop()

@@ -5,14 +5,18 @@ from tqdm import tqdm
 
 def createIfNot(dir):
     if not os.path.exists(dir):
-        os.makedirs(dir)
-
+        try:
+            os.makedirs(dir)
+        except:
+            return False
+    return True
 folders = glob("/frames/*/")
 
 for folder in folders:
     if "." in folder:
         continue
-    createIfNot(folder+"png")
+    if not createIfNot(folder+"png"):
+        continue
     for file in tqdm(glob(f"{folder}svg/*.svg")):
         dest = file.split("/")
         name = dest.pop()
